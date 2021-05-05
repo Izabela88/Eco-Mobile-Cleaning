@@ -63,7 +63,6 @@
   position: absolute;
   letter-spacing: 4px;
   cursor: pointer;
-  /* border: 1px solid var(--color-primary-50); */
   outline: none;
   color: var(--color-primary-50);
   background: var(--color-primary-700);
@@ -99,10 +98,10 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.btn a:active {
+/* .btn:active {
   color: var(--color-primary-700);
   font-weight: bold;
-}
+} */
 
 .btn:active:after {
   background: transparent;
@@ -137,4 +136,5 @@
 
 .btn a {
   color: var(--color-primary-50);
+  font-weight: bold;
 }
