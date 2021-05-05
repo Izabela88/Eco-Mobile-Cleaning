@@ -1,7 +1,10 @@
+import { Fragment } from 'react';
+import Hero from '../components/home-page/hero';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <Fragment>
+      <Hero />
+    </Fragment>
   );
 }
