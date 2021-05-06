@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 1600px;
   margin: 5px auto;
   position: fixed;
   top: 0;
