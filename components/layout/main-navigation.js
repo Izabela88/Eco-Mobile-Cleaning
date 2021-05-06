@@ -4,7 +4,7 @@ import Logo from './logo';
 
 export default function MainNavigation() {
   return (
-    <header>
+    <header className={classes.header}>
       <Link href='/'>
         <a>
           <Logo />
