@@ -8,9 +8,8 @@ export default function Hero() {
         <Image
           src='/images/home-img.jpg'
           alt='A Hero image'
-          width={1300}
-          height={900}
-          layout='responsive'
+          layout='fill'
+          objectFit='contain'
         />
       </div>
       <div className={classes.heading}>
