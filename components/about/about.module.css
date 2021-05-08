@@ -5,6 +5,31 @@
   margin: auto;
   background-color: var(--color-primary-700);
 }
+
+.heading {
+  position: absolute;
+  color: aliceblue;
+  left: 52%;
+  top: 8%;
+}
+
+.heading h1 {
+  font-size: 70px;
+  letter-spacing: 2px;
+}
+
+.heading h1 span {
+  color: var(--color-primary-800);
+}
+
+.heading p {
+  color: var(--color-primary-400);
+  position: absolute;
+  font-size: 26px;
+  left: 190px;
+  letter-spacing: 2px;
+}
+
 .image1 {
   height: 500px;
   width: 500px;
@@ -29,7 +54,7 @@
   flex-direction: column;
   width: 300px;
   height: 340px;
-  padding: 17px 11px;
+  padding: 17px 15px;
 }
 
 .box h2 {
@@ -40,9 +65,13 @@
 }
 
 .box p {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-primary-50);
   letter-spacing: 3px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 20px;
+  font-weight: 100;
+  margin-left: 20px;
 }
 
 .box1 {
@@ -55,7 +84,7 @@
   position: absolute;
   left: 58%;
   top: 64%;
-  height: 280px;
+  height: 310px;
 }
 
 .box3 {

@@ -4,6 +4,12 @@ import classes from './about.module.css';
 export default function About() {
   return (
     <section className={classes.about} id='about'>
+      <div className={classes.heading}>
+        <h1>
+          <span>Who</span> We Are
+        </h1>
+        <p>and what we offer</p>
+      </div>
       <div className={classes.image1}>
         <Image
           src='/images/img6.jpg'
@@ -40,7 +46,7 @@ export default function About() {
         <h2>ECO FRIENDLY</h2>
         <p>
           Our products are eco-friendly. We use only 3l of water for one car
-          with absolutely zero-waste.
+          with absolutely zero-waste!
         </p>
       </div>
       <div className={`${classes.box} ${classes.box3}`}>
