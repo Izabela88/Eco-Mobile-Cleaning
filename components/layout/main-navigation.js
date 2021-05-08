@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import classes from './main-navigation.module.css';
 import Logo from './logo';
+import About from '../../components/about/about';
 import { debounce } from '../utilities/helpers';
 import React, { useState, useEffect } from 'react';
 
-export default function MainNavigation() {
+export default function MainNavigation(props) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -36,19 +37,21 @@ export default function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/'>Home</Link>
+            <Link href='/'>
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <Link href='/about'>About</Link>
+            <a>About</a>
           </li>
           <li>
-            <Link href='/prices'>Prices</Link>
+            <a>Prices</a>
           </li>
           <li>
-            <Link href='/testimonials'>Testimonials</Link>
+            <a>Testimonials</a>
           </li>
           <li>
-            <Link href='/contact'>Contact</Link>
+            <a>Contact</a>
           </li>
         </ul>
       </nav>
