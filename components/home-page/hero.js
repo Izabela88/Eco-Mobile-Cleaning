@@ -3,7 +3,7 @@ import classes from './hero.module.css';
 
 export default function Hero() {
   return (
-    <section className={classes.home}>
+    <section className={classes.home} id='home'>
       <div className={classes.image}>
         <Image
           src='/images/home-img.jpg'
