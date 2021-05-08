@@ -62,8 +62,8 @@ export default function About() {
         <p>
           We are dedicated to providing quality service, customer satisfaction
           at a great value an area up to 35 miles from Derby We will come and
-          clean your car - seats, upholstery and cockpit, and outside - with
-          steam.
+          clean your car inside - seats, upholstery and cockpit, and outside -
+          with steam.
         </p>
       </div>
 
