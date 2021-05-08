@@ -81,7 +81,7 @@ export default function About() {
           We offer multiple services at a great value to meet your needs. We
           offer a premium service while saving your time and money. ​The steam
           remove even strong dirt from the surface of the fabric without getting
-          it wet.
+          it wet!
         </p>
       </div>
     </section>
