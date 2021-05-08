@@ -8,7 +8,7 @@ export default function About() {
         <h1>
           <span>Who</span> We Are
         </h1>
-        <p>and what we offer</p>
+        <h2>and what we offer</h2>
       </div>
       <div className={classes.image1}>
         <Image
