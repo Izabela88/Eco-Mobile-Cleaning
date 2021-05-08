@@ -33,8 +33,8 @@ export default function About() {
           <Image
             src='/images/icons/plant-based.svg'
             alt='An Icon'
-            width={50}
-            height={50}
+            width={70}
+            height={70}
           />
         </div>
         <h2>ECO FRIENDLY</h2>
