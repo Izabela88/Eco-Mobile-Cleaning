@@ -26,20 +26,22 @@ export default function Cards() {
       .catch(console.error);
   }, []);
   return (
-    <div className={classes.cards}>
-      {cardsData &&
-        cardsData.map((card, index) => (
-          <div key={index} className={classes.card}>
-            <div className={classes.image}>
-              <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
+    <div className={classes.container}>
+      <div className={classes.cards}>
+        {cardsData &&
+          cardsData.map((card, index) => (
+            <div key={index} className={classes.card}>
+              <div className={classes.image}>
+                <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
+              </div>
+              <div className={classes.text}>
+                <h1>{card.title}</h1>
+                <p>{card.description}</p>
+                <BlockContent blocks={card.content} />
+              </div>
             </div>
-            <div className={classes.text}>
-              <h1>{card.title}</h1>
-              <p>{card.description}</p>
-              <BlockContent blocks={card.content} />
-            </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 }
