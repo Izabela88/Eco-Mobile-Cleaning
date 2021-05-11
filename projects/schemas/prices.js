@@ -20,12 +20,9 @@ export default {
         hotspot: true,
       },
     },
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
+    {
+      name: 'content',
+      type: 'blockContent',
     },
-  },
+  ],
 };

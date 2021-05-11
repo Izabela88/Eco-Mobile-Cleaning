@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classes from './cards.module.css';
 import sanityClient from '../../client';
+import BlockContent from '@sanity/block-content-to-react';
 
 export default function Cards() {
   const [cardsData, setCardsData] = useState(null);
@@ -18,7 +19,7 @@ export default function Cards() {
           alt
         },
         description,
-      
+     content
       }`
       )
       .then((data) => setCardsData(data))
@@ -26,18 +27,19 @@ export default function Cards() {
   }, []);
   return (
     <div className={classes.cards}>
-      <div className={classes.box}>
-        {cardsData &&
-          cardsData.map((card, index) => (
-            <div key={index} className={classes.items}>
-              <div className={classes.image}>
-                <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
-              </div>
-              <div>{card.title}</div>
-              <div>{card.description}</div>
+      {cardsData &&
+        cardsData.map((card, index) => (
+          <div key={index} className={classes.card}>
+            <div className={classes.image}>
+              <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
             </div>
-          ))}
-      </div>
+            <div className={classes.text}>
+              <h1>{card.title}</h1>
+              <p>{card.description}</p>
+              <BlockContent blocks={card.content} />
+            </div>
+          </div>
+        ))}
     </div>
   );
 }
