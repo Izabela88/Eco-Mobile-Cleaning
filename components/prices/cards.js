@@ -36,18 +36,6 @@ export default function Cards() {
       <div className={classes.cards}>
         {cardsData &&
           cardsData.map((card, index) => (
-            // <div key={index} className={classes.card}>
-            //   <div className={classes.image}>
-            //     <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
-            //   </div>
-            //   <div className={classes.text}>
-            //     <h1>{card.title}</h1>
-            //     <BlockContent blocks={card.content} />
-            //   </div>
-            //   <div>
-            //     <div></div>
-            //   </div>
-            // </div>
             <div key={index} className={classes.card}>
               <div
                 className={`${classes.card__side} ${classes.card__sidefront1} `}

@@ -2,17 +2,18 @@
   margin: auto;
   max-width: 1400px;
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  padding: 10px;
 }
 
 .card {
-  width: 90%;
+  width: 100%;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -21,17 +22,33 @@
   -webkit-perspective: 150rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 52rem;
+  height: 60rem;
+  cursor: pointer;
 }
 
 .card h1 {
-  color: var(--color-primary-500);
-  font-size: 18px;
+  color: var(--color-primary-50);
+  font-size: 25px;
 }
+.card h2 {
+  color: var(--color-primary-500);
+  font-size: 20px;
+  margin-top: 30px;
+}
+
 .card h3 {
   color: var(--color-primary-400);
   font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
+
+.card h4 {
+  line-height: 40px;
+  color: var(--color-primary-400);
+}
+
 .card p {
   font-size: 13px;
   font-weight: bold;
@@ -39,12 +56,26 @@
 
 .card em {
   font-size: 11px;
+  color: var(--color-primary-50);
+}
+
+.card ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.card li {
+  text-align: left;
+  margin-left: 20%;
+  font-size: 14px;
+  color: var(--color-primary-50);
+  line-height: 30px;
 }
 
 .image {
   height: 100px;
   width: 100px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .image img {
@@ -53,27 +84,23 @@
 }
 
 .text {
-  line-height: 30px;
+  text-align: center;
 }
 
 .card__side {
-  height: 52rem;
+  height: 46rem;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
-  width: 100%;
+  width: 90%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}
-
-.card__sidefront {
-  background-color: #fff;
 }
 
 .card__sidefront1 {
@@ -111,6 +138,11 @@
 
 .card__pricebox {
   text-align: center;
-  color: #fff;
   margin-bottom: 8rem;
+}
+
+.card__pricebox p {
+  font-size: 30px;
+  margin: 20px 0;
+  color: var(--color-primary-50);
 }
