@@ -9,7 +9,7 @@ export default function Cards() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "cards"]{
+        `*[_type == "cards" && featured != true]{
         title,
         mainImage{
           asset->{
@@ -19,25 +19,63 @@ export default function Cards() {
           alt
         },
         description,
-     content
+     content,
+     car1,
+     car2,
+     car3,
+     popular
       }`
       )
       .then((data) => setCardsData(data))
       .catch(console.error);
   }, []);
+  console.log(cardsData);
+
   return (
     <div className={classes.container}>
       <div className={classes.cards}>
         {cardsData &&
           cardsData.map((card, index) => (
+            // <div key={index} className={classes.card}>
+            //   <div className={classes.image}>
+            //     <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
+            //   </div>
+            //   <div className={classes.text}>
+            //     <h1>{card.title}</h1>
+            //     <BlockContent blocks={card.content} />
+            //   </div>
+            //   <div>
+            //     <div></div>
+            //   </div>
+            // </div>
             <div key={index} className={classes.card}>
-              <div className={classes.image}>
-                <img src={card.mainImage.asset.url} alt={card.mainImage.alt} />
+              <div
+                className={`${classes.card__side} ${classes.card__sidefront1} `}
+              >
+                <div className={classes.image}>
+                  <img
+                    src={card.mainImage.asset.url}
+                    alt={card.mainImage.alt}
+                  />
+                </div>
+
+                <div className={classes.text}>
+                  <h1>{card.title}</h1>
+                  <BlockContent blocks={card.content} />
+                </div>
               </div>
-              <div className={classes.text}>
-                <h1>{card.title}</h1>
-                <p>{card.description}</p>
-                <BlockContent blocks={card.content} />
+
+              <div
+                className={`${classes.card__side} ${classes.card__sideback} ${classes.card__sideback1}`}
+              >
+                <div className={classes.card__cta}>
+                  <div className={classes.card__pricebox}>
+                    <p>{card.car1}</p>
+                    <p>{card.car2}</p>
+                    <p>{card.car3}</p>
+                  </div>
+                  <h4>{card.description}</h4>
+                </div>
               </div>
             </div>
           ))}

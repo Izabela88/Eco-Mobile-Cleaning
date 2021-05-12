@@ -13,25 +13,32 @@
 
 .card {
   width: 90%;
-  height: 100%;
   position: relative;
   overflow: hidden;
   margin: auto;
-  border: 1px solid black;
   padding: 10px;
   text-align: center;
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 52rem;
 }
 
 .card h1 {
-  margin: 20px 0;
   color: var(--color-primary-500);
+  font-size: 18px;
 }
 .card h3 {
-  margin: 20px 0;
   color: var(--color-primary-400);
+  font-size: 15px;
 }
 .card p {
-  margin: 10px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card em {
+  font-size: 11px;
 }
 
 .image {
@@ -47,4 +54,63 @@
 
 .text {
   line-height: 30px;
+}
+
+.card__side {
+  height: 52rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card__sidefront {
+  background-color: #fff;
+}
+
+.card__sidefront1 {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+
+.card__sideback {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card__sideback1 {
+  background: linear-gradient(-45deg, #64b5f6, #f403d1);
+}
+
+.card:hover .card__sidefront1 {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__sideback {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.card__pricebox {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
 }

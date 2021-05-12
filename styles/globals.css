@@ -48,7 +48,9 @@ h4 {
   font-family: 'Comfortaa', cursive;
 }
 
-p {
+p,
+ul,
+li {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 2px;
 }

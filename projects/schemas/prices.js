@@ -10,7 +10,20 @@ export default {
 
     {
       name: 'description',
-      type: 'text',
+      type: 'string',
+    },
+
+    {
+      name: 'car1',
+      type: 'string',
+    },
+    {
+      name: 'car2',
+      type: 'string',
+    },
+    {
+      name: 'car3',
+      type: 'string',
     },
     {
       name: 'mainImage',
@@ -24,5 +37,13 @@ export default {
       name: 'content',
       type: 'blockContent',
     },
+    {
+      title: 'isPopular',
+      name: 'popular',
+      type: 'boolean',
+    },
   ],
+  initialValue: {
+    isPopular: false,
+  },
 };
