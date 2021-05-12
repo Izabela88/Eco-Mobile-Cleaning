@@ -31,6 +31,7 @@
   font-size: 27px;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 57%);
   padding: 5px;
+  margin: 0 20px;
 }
 
 .card h2 {
@@ -108,7 +109,6 @@
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(2, 38, 158, 0.5);
   box-shadow: 0 1.5rem 4rem rgba(2, 38, 158, 0.5);
-  border: 3px solid var(--color-primary-500);
 }
 
 .card__sidefront1 {
