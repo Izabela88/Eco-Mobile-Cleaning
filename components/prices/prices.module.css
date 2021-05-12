@@ -1,3 +1,29 @@
 .prices {
-  background-color: var(--color-primary-50);
+  background-color: var(--color-primary-40);
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  width: 850px;
+  left: 38%;
+  padding-top: 70px;
+}
+
+.heading h1 {
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: var(--color-primary-50);
+}
+
+.heading h1 span {
+  color: var(--color-primary-800);
+}
+
+.heading h2 {
+  color: var(--color-primary-400);
+  position: absolute;
+  font-size: 29px;
+  left: 9px;
+  letter-spacing: 2px;
 }
