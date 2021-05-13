@@ -43,11 +43,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Comfortaa', cursive;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
-p {
+p,
+ul,
+li {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 2px;
 }

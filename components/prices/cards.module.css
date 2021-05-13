@@ -1,0 +1,156 @@
+.container {
+  margin: auto;
+  max-width: 1400px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 52rem;
+  cursor: pointer;
+}
+
+.card h1 {
+  color: var(--color-primary-50);
+  font-size: 27px;
+  /* box-shadow: 0 1rem 3rem rgb(0 0 0 / 57%); */
+  filter: drop-shadow(7px 6px 6px #000);
+  padding: 5px;
+}
+
+.card h2 {
+  color: var(--color-primary-50);
+  font-size: 21px;
+  margin-top: 30px;
+}
+
+.card h3 {
+  color: var(--color-primary-50);
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.card h4 {
+  color: var(--color-primary-50);
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.card em {
+  font-size: 11px;
+  color: var(--color-primary-50);
+}
+.card ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.card li {
+  text-align: left;
+  margin-left: 20%;
+  font-size: 14px;
+  color: var(--color-primary-50);
+  line-height: 25px;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  margin: 26px auto;
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 57%);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+}
+
+.card__side {
+  height: 46rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  width: 90%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(2, 38, 158, 0.5);
+  box-shadow: 0 1.5rem 4rem rgba(2, 38, 158, 0.5);
+}
+
+.card__sidefront1 {
+  background: linear-gradient(-45deg, #02a164, #0220a0);
+}
+
+.card__sideback {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card__sideback1 {
+  background: linear-gradient(-45deg, #0220a0, #02a164);
+}
+
+.card:hover .card__sidefront1 {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__sideback {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.card__pricebox {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.card__pricebox p {
+  font-size: 30px;
+  margin: 20px 0;
+  color: var(--color-primary-50);
+}
