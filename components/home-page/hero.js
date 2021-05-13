@@ -6,7 +6,7 @@ export default function Hero() {
     <section className={classes.home} id='home'>
       <div className={classes.image}>
         <Image
-          src='/images/home-img.jpg'
+          src='/images/home-img.png'
           alt='A Hero image'
           layout='fill'
           objectFit='cover'

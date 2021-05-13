@@ -6,7 +6,7 @@ export default function About() {
     <section className={classes.about} id='about'>
       <div className={classes.image1}>
         <Image
-          src='/images/i2.jpg'
+          src='/images/i21.png'
           alt='About image'
           layout='fill'
           objectFit='cover'
