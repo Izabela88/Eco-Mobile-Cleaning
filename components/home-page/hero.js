@@ -9,7 +9,7 @@ export default function Hero() {
           src='/images/home-img.jpg'
           alt='A Hero image'
           layout='fill'
-          objectFit='contain'
+          objectFit='cover'
         />
       </div>
       <div className={classes.heading}>
