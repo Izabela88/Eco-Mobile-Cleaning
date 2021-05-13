@@ -27,10 +27,7 @@
 .about {
   position: relative;
   overflow: hidden;
-}
-
-.image1 {
-  height: 20vh;
+  height: 100vh;
 }
 
 .image1 img {
@@ -76,6 +73,7 @@
   grid-gap: 32px;
   position: relative;
   margin-left: 6%;
+  margin-top: 10%;
   margin-bottom: 55px;
   box-shadow: 0 15px 35px -10px var(--color-primary-700);
 }
