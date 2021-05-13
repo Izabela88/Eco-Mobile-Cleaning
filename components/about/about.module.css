@@ -97,9 +97,9 @@
 }
 
 .box p {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-primary-100);
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   line-height: 20px;
 }
@@ -109,52 +109,32 @@
   height: 80px;
   background-color: rgb(230 235 255 / 27%);
   display: flex;
+  left: 0;
+  right: 0;
+  top: -40px;
   justify-content: center;
   border-radius: 50%;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.9);
   overflow: hidden;
+  position: absolute;
 }
 
 .icon1 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  right: 0;
   margin: 48px 225px;
 }
 .icon2 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  right: 0;
   margin: 48px 531px;
 }
 .icon3 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  right: 0;
   margin: 48px 834px;
 }
 .icon4 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  right: 0;
   margin: 370px 225px;
 }
 .icon5 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  right: 0;
   margin: 370px 531px;
 }
 .icon6 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  right: 0;
   margin: 370px 834px;
 }
 
