@@ -8,14 +8,15 @@ export default function Person1() {
         <Image
           src='/images/wmn.png'
           alt='About image'
-          width={1000}
-          height={500}
+          width={700}
+          height={800}
         />
       </div>
       <div className={classes.text}>
         <h4>Martyna</h4>
         <p>
-          I recommend this guy, he made a miracle because my car is like new!
+          I recommend this guy, <br /> he made a miracle because my car is like
+          new!
         </p>
       </div>
     </div>

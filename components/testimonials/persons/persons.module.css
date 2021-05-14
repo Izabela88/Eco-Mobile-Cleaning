@@ -2,4 +2,6 @@
   height: 100vh;
   opacity: 0.95;
   position: relative;
+  width: 100vw;
+  background-color: rgb(224 126 28 / 93%);
 }
