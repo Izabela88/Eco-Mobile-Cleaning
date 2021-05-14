@@ -15,9 +15,8 @@ export default function Prices() {
       </div>
       <div className={classes.heading}>
         <h1>
-          <span>Our</span> Prices
+          <span>Prices</span> And Services
         </h1>
-        <h2>and services</h2>
       </div>
       <Cards />
     </section>

@@ -37,13 +37,15 @@
 }
 
 .heading {
+  display: flex;
+  justify-content: center;
   position: relative;
-  left: 38%;
-  padding-top: 50px;
+  padding-top: 140px;
+  margin-bottom: -28px;
 }
 
 .heading h1 {
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 2px;
   color: var(--color-primary-50);
   font-family: 'Spartan', sans-serif;
@@ -51,13 +53,4 @@
 
 .heading h1 span {
   color: var(--color-primary-800);
-}
-
-.heading h2 {
-  color: var(--color-primary-50);
-  position: absolute;
-  font-size: 29px;
-  left: 9px;
-  letter-spacing: 2px;
-  font-family: 'Spartan', sans-serif;
 }
