@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mandali&family=Mukta:wght@200;300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Questrial&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Mukta', sans-serif; */
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  /* background-color: var(--color-primary-700); */
 }
 
 body {
@@ -37,29 +45,23 @@ body {
   --size-30: 11rem;
   --size-40: 10rem;
   --size-50: 12rem;
-
-  background-color: var(--color-primary-700);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Comfortaa', cursive;
-  letter-spacing: 1px;
-  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 p,
 ul,
 li {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 a {
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
 }
 
 button {

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 .container {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1200px;
   text-align: center;
   padding: 30px 0;
 }
@@ -24,46 +26,50 @@
   -moz-perspective: 150rem;
   height: 52rem;
   cursor: pointer;
+  color: var(--color-primary-50);
 }
 
 .card h1 {
-  color: var(--color-primary-50);
   font-size: 27px;
-  /* box-shadow: 0 1rem 3rem rgb(0 0 0 / 57%); */
   filter: drop-shadow(7px 6px 6px #000);
   padding: 5px;
+  font-family: 'Lato', sans-serif;
 }
 
 .card h2 {
-  color: var(--color-primary-50);
+  color: var(--color-primary-100);
   font-size: 21px;
   margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  color: var(--color-primary-50);
+  filter: drop-shadow(7px 6px 6px #000);
 }
 
 .card h3 {
-  color: var(--color-primary-50);
   font-size: 17px;
   font-weight: bold;
   margin: 20px 0;
   text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
 }
 
 .card h4 {
-  color: var(--color-primary-50);
   text-transform: uppercase;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 11px;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 .card p {
   font-size: 13px;
   font-weight: bold;
   margin-top: 12px;
+  font-family: 'Lato', sans-serif;
 }
 
 .card em {
   font-size: 11px;
-  color: var(--color-primary-50);
 }
 .card ul {
   list-style: none;
@@ -74,8 +80,8 @@
   text-align: left;
   margin-left: 20%;
   font-size: 14px;
-  color: var(--color-primary-50);
   line-height: 25px;
+  font-family: 'Spartan', sans-serif;
 }
 
 .image {
@@ -83,7 +89,7 @@
   width: 100px;
   margin: 26px auto;
   border-radius: 50%;
-  box-shadow: 0 1rem 3rem rgb(0 0 0 / 57%);
+  box-shadow: 0 15px 10px -10px rgb(0 0 0 / 90%);
 }
 
 .image img {
@@ -107,12 +113,13 @@
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(2, 38, 158, 0.5);
-  box-shadow: 0 1.5rem 4rem rgba(2, 38, 158, 0.5);
+  -webkit-box-shadow: 0 1rem 3rem rgba(2, 38, 158, 0.5);
+  box-shadow: 0 1rem 3rem rgba(2, 38, 158, 0.5);
 }
 
 .card__sidefront1 {
-  background: linear-gradient(-45deg, #02a164, #0220a0);
+  /* background: linear-gradient(-45deg, #02a164, #0220a0); */
+  background: rgb(26 27 30 / 60%);
 }
 
 .card__sideback {
@@ -121,9 +128,11 @@
 }
 
 .card__sideback1 {
-  background: linear-gradient(-45deg, #0220a0, #02a164);
+  /* background: linear-gradient(-45deg, #0220a0, #02a164);
+  
+} */
+  background: rgb(26 27 30 / 60%);
 }
-
 .card:hover .card__sidefront1 {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
