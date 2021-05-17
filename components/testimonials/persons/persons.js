@@ -1,10 +1,15 @@
 import classes from './persons.module.css';
-import Person1 from '../persons/person1/person1';
+import Person from './person/person';
 
 export default function Persons() {
   return (
     <section className={classes.persons}>
-      <Person1 />
+      <div className={classes.persons__heading}>
+        <h1>
+          <span>Our</span> Cursomers Love Us!
+        </h1>
+      </div>
+      <Person />
     </section>
   );
 }

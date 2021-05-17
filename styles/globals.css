@@ -64,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  color: var(--color-primary-800);
+}
+
 button {
   font: inherit;
   cursor: pointer;

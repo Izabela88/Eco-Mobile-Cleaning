@@ -3,5 +3,19 @@
   opacity: 0.95;
   position: relative;
   width: 100vw;
-  background-color: rgb(224 126 28 / 93%);
+  background-color: rgb(224 126 28 / 100%);
+}
+
+.persons__heading {
+  position: absolute;
+  z-index: 200;
+  left: 47%;
+  top: 17%;
+}
+
+.persons__heading h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: var(--color-primary-50);
+  font-family: 'Spartan', sans-serif;
 }
