@@ -2,7 +2,7 @@ import classes from './person.module.css';
 import sanityClient from '../../../../client';
 import React, { useEffect, useState } from 'react';
 
-export default function Person() {
+export default function Person({ index }) {
   const [testimonialsData, setTestimonialsData] = useState(null);
 
   useEffect(() => {
@@ -24,12 +24,13 @@ export default function Person() {
       .then((data) => setTestimonialsData(data))
       .catch(console.error);
   }, []);
+  console.log(testimonialsData);
 
   return (
-    <div className={classes.container}>
+    <div>
       {testimonialsData &&
         testimonialsData.map((opinion, index) => (
-          <div key={index} className={classes.box}>
+          <div key={index} id={index} className={classes.person}>
             <div className={classes.container__image}>
               <img
                 src={opinion.mainImage.asset.url}

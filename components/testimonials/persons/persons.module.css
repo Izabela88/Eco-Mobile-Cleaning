@@ -1,16 +1,16 @@
 .persons {
-  height: 100vh;
+  overflow: hidden;
   opacity: 0.95;
   position: relative;
   width: 100vw;
-  background-color: rgb(224 126 28 / 100%);
+  background-color: rgb(23 23 23);
 }
 
 .persons__heading {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   z-index: 200;
-  left: 47%;
-  top: 17%;
+  margin-top: 100px;
 }
 
 .persons__heading h1 {
@@ -18,4 +18,31 @@
   letter-spacing: 2px;
   color: var(--color-primary-50);
   font-family: 'Spartan', sans-serif;
+}
+
+.next,
+.prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+  transform: scale(-1);
 }
